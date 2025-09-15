@@ -1,4 +1,4 @@
-# John Earlie - Professional Portfolio
+# Johnny Earlie - Professional Portfolio
 
 A modern, responsive portfolio website showcasing my professional experience as an Operations Manager and Creative Professional, built with React, TypeScript, and Tailwind CSS.
 
