@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Earlie - Operations Manager & Creative Professional</title>
+    <meta name="description" content="John Earlie - Operations Manager & Creative Professional. UX Designer with expertise in AI integration, workflow automation, and creative expression.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        /* Custom CSS Variables */
+        :root {
+            --green-primary: #22c55e;
+            --green-dark: #16a34a;
+            --green-light: #dcfce7;
+        }
+        
+        .text-green-600 { color: var(--green-primary); }
+        .bg-green-600 { background-color: var(--green-primary); }
+        .bg-green-50 { background-color: var(--green-light); }
+        .border-green-600 { border-color: var(--green-primary); }
+        .hover\:bg-green-700:hover { background-color: var(--green-dark); }
+        
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        
+        /* Section spacing */
+        .section-padding { padding: 4rem 0; }
+        
+        /* Animations */
+        .fade-in { animation: fadeIn 0.6s ease-out; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold text-gray-900">John Earlie</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-green-600 transition-colors">About</a>
+                    <a href="#experience" class="text-gray-700 hover:text-green-600 transition-colors">Experience</a>
+                    <a href="#music" class="text-gray-700 hover:text-green-600 transition-colors">Music</a>
+                    <a href="#photography" class="text-gray-700 hover:text-green-600 transition-colors">Photography</a>
+                    <a href="#dog" class="text-gray-700 hover:text-green-600 transition-colors">Csipke</a>
+                    <a href="#contact" class="text-gray-700 hover:text-green-600 transition-colors">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="#about" class="text-gray-700 hover:text-green-600 transition-colors">About</a>
+                    <a href="#experience" class="text-gray-700 hover:text-green-600 transition-colors">Experience</a>
+                    <a href="#music" class="text-gray-700 hover:text-green-600 transition-colors">Music</a>
+                    <a href="#photography" class="text-gray-700 hover:text-green-600 transition-colors">Photography</a>
+                    <a href="#dog" class="text-gray-700 hover:text-green-600 transition-colors">Csipke</a>
+                    <a href="#contact" class="text-gray-700 hover:text-green-600 transition-colors">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-green-50 to-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center fade-in">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+                    John Earlie
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8">
+                    Operations Manager & Creative Professional
+                </p>
+                <p class="text-lg text-gray-700 mb-10 max-w-3xl mx-auto">
+                    UX Designer with expertise in AI integration, workflow automation, and creative expression. 
+                    Bridging the gap between operational excellence and innovative solutions.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#experience" class="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-colors">
+                        View Experience
+                    </a>
+                    <a href="https://www.linkedin.com/in/johnnyearlie" target="_blank" class="border border-green-600 text-green-600 px-8 py-3 rounded-lg hover:bg-green-50 transition-colors">
+                        LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    A multifaceted professional combining operational expertise with creative passion
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Professional Background</h3>
+                    <p class="text-gray-700 mb-6">
+                        As an Operations Manager with UX Design certification from CareerFoundry, I specialize in streamlining 
+                        processes and enhancing user experiences. My approach combines analytical thinking with creative 
+                        problem-solving to deliver results that matter.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        Currently exploring the intersection of AI and operations management, focusing on prompt engineering 
+                        and workflow automation to optimize business processes and improve efficiency.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm">Operations Management</span>
+                        <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm">UX Design</span>
+                        <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm">AI Integration</span>
+                        <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm">Workflow Automation</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Creative Pursuits</h3>
+                    <p class="text-gray-700 mb-6">
+                        Beyond the corporate world, I'm passionate about music as a member of Blaschko Alley, 
+                        where creativity meets collaboration. I also share life with my wife Csilla, a talented 
+                        photographer, and our beloved Mudi dog, Csipke.
+                    </p>
+                    <p class="text-gray-700">
+                        This diverse background allows me to bring fresh perspectives to professional challenges 
+                        while maintaining authenticity and creative thinking in all my endeavors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Professional Experience</h2>
+                <p class="text-xl text-gray-600">
+                    Combining operations expertise with UX design and AI innovation
+                </p>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Operations Management -->
+                <div class="bg-white rounded-lg p-8 shadow-sm">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Operations Management</h3>
+                    <p class="text-gray-700 mb-6">
+                        Experienced in optimizing business processes, implementing efficient workflows, and driving 
+                        operational excellence across various industries. Focus on data-driven decision making and 
+                        continuous improvement methodologies.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Core Competencies</h4>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Process Optimization</li>
+                                <li>• Workflow Design</li>
+                                <li>• Quality Assurance</li>
+                                <li>• Performance Analytics</li>
+                                <li>• Project Coordination</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Achievements</h4>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Streamlined cross-departmental processes</li>
+                                <li>• Implemented automation solutions</li>
+                                <li>• Improved operational efficiency</li>
+                                <li>• Enhanced team productivity</li>
+                                <li>• Reduced operational costs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UX Design -->
+                <div class="bg-white rounded-lg p-8 shadow-sm">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">UX Design Certification</h3>
+                    <p class="text-gray-700 mb-6">
+                        Qualified UX Designer through CareerFoundry, bringing user-centered design thinking to 
+                        operations management. This unique combination allows me to create solutions that are both 
+                        operationally efficient and user-friendly.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">UX Skills</h4>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• User Research & Analysis</li>
+                                <li>• Journey Mapping</li>
+                                <li>• Prototyping & Wireframing</li>
+                                <li>• Usability Testing</li>
+                                <li>• Design Systems</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Integration with Operations</h4>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• User-centered process design</li>
+                                <li>• Employee experience optimization</li>
+                                <li>• Interface design for internal tools</li>
+                                <li>• Stakeholder journey mapping</li>
+                                <li>• Human-centered automation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Integration -->
+                <div class="bg-white rounded-lg p-8 shadow-sm">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">AI & Prompt Engineering</h3>
+                    <p class="text-gray-700 mb-6">
+                        Currently expanding expertise in AI integration and prompt engineering, focusing on practical 
+                        applications for workflow automation and process optimization in operational environments.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">AI Applications</h4>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Workflow Automation</li>
+                                <li>• Process Documentation</li>
+                                <li>• Decision Support Systems</li>
+                                <li>• Data Analysis Enhancement</li>
+                                <li>• Communication Optimization</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Learning Focus</h4>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Prompt Engineering Techniques</li>
+                                <li>• AI Tool Integration</li>
+                                <li>• Automation Implementation</li>
+                                <li>• Efficiency Optimization</li>
+                                <li>• Innovation in Operations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="https://www.linkedin.com/in/johnnyearlie" target="_blank" 
+                   class="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-colors inline-flex items-center gap-2">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    View Full Professional Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Music</h2>
+                <p class="text-xl text-gray-600">
+                    Creative expression through Blaschko Alley
+                </p>
+            </div>
+
+            <div class="bg-gradient-to-br from-green-50 to-white rounded-lg p-8">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Blaschko Alley</h3>
+                    <p class="text-gray-700 max-w-3xl mx-auto mb-8">
+                        Music has always been a cornerstone of my creative expression. As a member of Blaschko Alley, 
+                        I explore the intersection of creativity and collaboration, bringing the same passion for 
+                        innovation that drives my professional work.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-900 mb-4">Musical Journey</h4>
+                        <p class="text-gray-700 mb-6">
+                            Our band represents the creative side of my personality, where artistic expression meets 
+                            technical skill. This creative outlet enhances my professional work by fostering 
+                            innovative thinking and collaborative problem-solving.
+                        </p>
+                        <p class="text-gray-700">
+                            The discipline and creativity required in music directly translate to my operations 
+                            management approach, bringing fresh perspectives to business challenges.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-900 mb-4">Listen & Connect</h4>
+                        <div class="space-y-4">
+                            <a href="https://music.apple.com/search?term=blaschko%20alley" target="_blank" 
+                               class="flex items-center gap-3 bg-white border border-gray-200 rounded-lg p-4 hover:border-green-600 transition-colors">
+                                <i data-lucide="music" class="w-6 h-6 text-green-600"></i>
+                                <div>
+                                    <div class="font-semibold text-gray-900">Apple Music</div>
+                                    <div class="text-sm text-gray-600">Stream our latest tracks</div>
+                                </div>
+                            </a>
+                            <a href="https://blaschkoalley.com/" target="_blank" 
+                               class="flex items-center gap-3 bg-white border border-gray-200 rounded-lg p-4 hover:border-green-600 transition-colors">
+                                <i data-lucide="globe" class="w-6 h-6 text-green-600"></i>
+                                <div>
+                                    <div class="font-semibold text-gray-900">Official Website</div>
+                                    <div class="text-sm text-gray-600">Visit blaschkoalley.com</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photography Section -->
+    <section id="photography" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Photography</h2>
+                <p class="text-xl text-gray-600">
+                    Capturing moments with Csilla Szabo
+                </p>
+            </div>
+
+            <div class="bg-white rounded-lg p-8">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Collaborative Artistry</h3>
+                        <p class="text-gray-700 mb-6">
+                            My wife Csilla is a talented photographer whose artistic vision complements my analytical 
+                            approach to problem-solving. Together, we explore the world through different lenses – 
+                            both literal and metaphorical.
+                        </p>
+                        <p class="text-gray-700 mb-6">
+                            Her work in photography has taught me to appreciate attention to detail, composition, 
+                            and the importance of perspective – skills that directly enhance my professional 
+                            approach to operations and user experience design.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="camera" class="w-5 h-5 text-green-600"></i>
+                                <span class="text-gray-700">Professional Photography</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="heart" class="w-5 h-5 text-green-600"></i>
+                                <span class="text-gray-700">Creative Collaboration</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="eye" class="w-5 h-5 text-green-600"></i>
+                                <span class="text-gray-700">Artistic Perspective</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-6">Csilla Szabo Photography</h4>
+                        <p class="text-gray-700 mb-8">
+                            Discover the artistic world through Csilla's lens. Her photography captures 
+                            the beauty in everyday moments and transforms them into lasting memories.
+                        </p>
+                        <a href="https://csillaszabo.com" target="_blank" 
+                           class="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-colors inline-flex items-center gap-2">
+                            <i data-lucide="external-link" class="w-5 h-5"></i>
+                            Visit Csilla's Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dog Section -->
+    <section id="dog" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Meet Csipke</h2>
+                <p class="text-xl text-gray-600">
+                    Our beloved Mudi companion
+                </p>
+            </div>
+
+            <div class="bg-gradient-to-br from-green-50 to-white rounded-lg p-8">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Life with Csipke</h3>
+                        <p class="text-gray-700 mb-6">
+                            Csipke, our Mudi dog, brings joy, energy, and a different perspective to our daily lives. 
+                            The Mudi breed is known for their intelligence, versatility, and strong work ethic – 
+                            qualities that resonate with my professional approach.
+                        </p>
+                        <p class="text-gray-700 mb-6">
+                            Having Csipke has taught me about patience, consistency, and the importance of clear 
+                            communication – skills that translate directly to effective team management and 
+                            operational excellence.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="heart" class="w-5 h-5 text-green-600"></i>
+                                <span class="text-gray-700">Loyal Companion</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="zap" class="w-5 h-5 text-green-600"></i>
+                                <span class="text-gray-700">Energetic & Intelligent</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="instagram" class="w-5 h-5 text-green-600"></i>
+                                <span class="text-gray-700">Social Media Star</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-6">Follow Our Adventures</h4>
+                        <p class="text-gray-700 mb-8">
+                            Join us on Instagram to see Csipke's daily adventures and learn more about 
+                            the wonderful world of Mudi dogs. Each post captures the joy and intelligence 
+                            that makes this breed so special.
+                        </p>
+                        <a href="https://instagram.com/mudi_planet" target="_blank" 
+                           class="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-colors inline-flex items-center gap-2">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                            @mudi_planet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600">
+                    Let's discuss opportunities and collaborations
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Contact Info -->
+                    <div class="bg-white rounded-lg p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Professional Contact</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="bg-green-50 p-3 rounded-lg">
+                                    <i data-lucide="mail" class="w-6 h-6 text-green-600"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-gray-900">Email</div>
+                                    <a href="mailto:johnnyearlie@gmail.com" class="text-green-600 hover:text-green-700">
+                                        johnnyearlie@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="bg-green-50 p-3 rounded-lg">
+                                    <i data-lucide="linkedin" class="w-6 h-6 text-green-600"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-gray-900">LinkedIn</div>
+                                    <a href="https://www.linkedin.com/in/johnnyearlie" target="_blank" 
+                                       class="text-green-600 hover:text-green-700">
+                                        linkedin.com/in/johnnyearlie
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 pt-8 border-t border-gray-200">
+                            <h4 class="font-semibold text-gray-900 mb-4">Areas of Interest</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm">Operations Management</span>
+                                <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm">UX Design</span>
+                                <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm">AI Integration</span>
+                                <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm">Process Optimization</span>
+                                <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm">Workflow Automation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="bg-white rounded-lg p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Send a Message</h3>
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" name="name" required
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" required
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject" required
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" required
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"></textarea>
+                            </div>
+                            <button type="submit" 
+                                    class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <h3 class="text-xl font-bold mb-4">John Earlie</h3>
+                    <p class="text-gray-300 mb-4">
+                        Operations Manager & Creative Professional combining operational expertise 
+                        with UX design and AI innovation.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/johnnyearlie" target="_blank" 
+                           class="text-gray-300 hover:text-green-400 transition-colors">
+                            <i data-lucide="linkedin" class="w-6 h-6"></i>
+                        </a>
+                        <a href="mailto:johnnyearlie@gmail.com" 
+                           class="text-gray-300 hover:text-green-400 transition-colors">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Professional</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#experience" class="hover:text-green-400 transition-colors">Experience</a></li>
+                        <li><a href="https://www.linkedin.com/in/johnnyearlie" target="_blank" class="hover:text-green-400 transition-colors">LinkedIn</a></li>
+                        <li><a href="#contact" class="hover:text-green-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Creative</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="https://blaschkoalley.com/" target="_blank" class="hover:text-green-400 transition-colors">Blaschko Alley</a></li>
+                        <li><a href="https://csillaszabo.com" target="_blank" class="hover:text-green-400 transition-colors">Csilla's Photography</a></li>
+                        <li><a href="https://instagram.com/mudi_planet" target="_blank" class="hover:text-green-400 transition-colors">@mudi_planet</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 John Earlie. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Create mailto link
+            const mailtoLink = `mailto:johnnyearlie@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Reset form
+            this.reset();
+            
+            // Show success message
+            alert('Thank you for your message! Your email client should now open with the message pre-filled.');
+        });
+
+        // Add fade-in animation to sections on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
